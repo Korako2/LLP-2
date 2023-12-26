@@ -12,7 +12,6 @@ int main(int argc, char **argv) {
     enum parser_status status = parse_request(req, request);
 
     if (status == PARSE_OK) get_request_view(request);
-
     free(req);
     free(request);
 

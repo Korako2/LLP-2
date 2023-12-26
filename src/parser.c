@@ -100,7 +100,6 @@ int read_attributes(char **req, int *path_length, struct attribute *attribute) {
 
 enum parser_status parse_request(char *req, struct request *request) {
 
-
     int path_length = strlen(req);
 
     check_path(req, &path_length);
